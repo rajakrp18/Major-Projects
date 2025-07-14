@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3F2FD;
+    color: #333;
+}
+
+.navbar {
+    background-color: #BBDEFB;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4CAF50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #FFFFFF;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.products {
+    padding: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cart, .contact, .delivery, .payment {
+    padding: 2rem;
+    background-color: #FFFFFF;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.cart-items {
+    margin-bottom: 1rem;
+}
+
+form input, form select, form textarea {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #BBDEFB;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
